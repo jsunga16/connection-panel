@@ -1,6 +1,6 @@
 {
-  "name": "connection-panel-ui",
-  "version": "0.0.1",
+  "name": "@jsunga16/connection-panel",
+  "version": "0.0.6",
   "description": "React connection panel library",
   "scripts": {
     "build": "rollup -c"
@@ -8,6 +8,8 @@
   "author": "on24",
   "license": "ISC",
   "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
@@ -30,9 +32,12 @@
   "dependencies": {
     "@radix-ui/colors": "^0.1.8"
   },
-  "module": "dist/connection-panel-ui.esm.min.mjs",
+  "module": "dist/connection-panel.esm.min.mjs",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/jsunga16"
+  }
 }
